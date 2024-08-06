@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             startDestination = nav_routes.home
         ) {
             fragment<HomeFragment>(nav_routes.home) {
-                label = "home"
+                label = "home_min"
             }
 
             fragment<PlantDetailFragment>("${nav_routes.plant_detail}/{${nav_arguments.plant_id}}") {
