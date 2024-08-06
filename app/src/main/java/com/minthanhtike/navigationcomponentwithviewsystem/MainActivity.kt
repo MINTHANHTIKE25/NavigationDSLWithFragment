@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 object nav_routes {
     const val home = "home"
-    const val plant_detail = "plant_detailfsdfsdfsdfs"
+    const val plant_detail = "plant_details"
 }
 
 object nav_arguments {
