@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             fragment<PlantDetailFragment>("${nav_routes.plant_detail}/{${nav_arguments.plant_id}}") {
-                label = "plant detail"
+                label = "plant_details"
                 argument(nav_arguments.plant_id) {
                     type = NavType.StringType
                 }
