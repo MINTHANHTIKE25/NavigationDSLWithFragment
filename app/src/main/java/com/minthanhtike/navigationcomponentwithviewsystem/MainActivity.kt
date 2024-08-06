@@ -45,5 +45,5 @@ object nav_routes {
 
 object nav_arguments {
     const val plant_id = "plant_id"
-    const val plant_name = "plant_name"
+    const val plant_name = "plant_names"
 }
