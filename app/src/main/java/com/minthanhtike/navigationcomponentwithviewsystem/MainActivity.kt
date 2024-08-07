@@ -47,6 +47,11 @@ class MainActivity : AppCompatActivity() {
 object nav_routes {
     const val home = "home"
     const val plant_detail = "plant_detail"
+    val plant_list  = arrayOf("Home Plant","Favourite Plant")
+    const val home_plant = "Home Plant"
+    const val fav_plant = "Favourite Plant"
+    const val shop_plant = "Shop Plant"
+    const val setting_plant = "Setting Plant"
 }
 
 object nav_arguments {

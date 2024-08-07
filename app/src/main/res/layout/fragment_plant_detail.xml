@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
     tools:context=".PlantDetailFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/plant_detail_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Plant Details" />
@@ -16,6 +18,22 @@
         android:id="@+id/data_passing_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sayar gyi ha ha " />
+        android:text="Sayar gyi ha ha"
+        android:layout_below="@id/plant_detail_text"/>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/home_plan_nav_host"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/data_passing_text"
+        android:layout_above="@id/bottom_nav"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        app:labelVisibilityMode="selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"/>
 
-</LinearLayout>
+</RelativeLayout>
